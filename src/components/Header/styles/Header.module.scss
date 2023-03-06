@@ -1,8 +1,11 @@
 @import './src/styles/variables';
 
 .root {
+  width: 100%;
   padding: 20px 128px;
   background: #0D0D0D;
+  position: fixed;
+  z-index: 9;
 
   @media screen and (max-width: $xl) {
     padding: 22px 24px;

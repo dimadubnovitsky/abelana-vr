@@ -1,0 +1,102 @@
+@import '../../../../../styles/variables';
+
+.root {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/images/background_stars.jpg");
+  background-position: center;
+  overflow: hidden;
+
+  @media screen and (max-width: $xl) {
+    background-size: cover;
+  }
+
+  .filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.61);
+  }
+
+  .container {
+    width: 1544px;
+    position: relative;
+
+    @media screen and (max-width: $xl) {
+      width: 100%;
+    }
+
+    .title {
+      max-width: 550px;
+      padding: 650px 0 80px 80px;
+      font-family: $fontOpenSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 130px;
+      line-height: 120px;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      z-index: 1;
+
+      @media screen and (max-width: $xl) {
+        max-width: 400px;
+        padding: 750px 0 110px 130px;
+        font-size: 76px;
+        line-height: 66px;
+      }
+
+      @media screen and (max-width: $m) {
+        max-width: 200px;
+        padding: 450px 0 160px 16px;
+        font-size: 48px;
+        line-height: 44px;
+      }
+    }
+
+    .images {
+      position: absolute;
+      bottom: 0;
+      left: 315px;
+      z-index: 2;
+
+      @media screen and (max-width: $xl) {
+        right: 0;
+        bottom: 150px;
+        left: unset;
+      }
+
+      @media screen and (max-width: $m) {
+        right: -22px;
+        bottom: 200px;
+      }
+
+      .botImage {
+        width: 826px;
+
+        @media screen and (max-width: $xl) {
+          display: none;
+        }
+      }
+
+      .tesseractImage {
+        width: 385px;
+        position: absolute;
+        bottom: 445px;
+        left: 520px;
+        z-index: 3;
+
+        @media screen and (max-width: $xl) {
+          position: static;
+          width: 580px;
+        }
+
+        @media screen and (max-width: $m) {
+          position: static;
+          width: 352px;
+        }
+      }
+    }
+  }
+}

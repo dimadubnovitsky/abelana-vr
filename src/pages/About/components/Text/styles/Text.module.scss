@@ -1,0 +1,35 @@
+@import '../../../../../styles/variables';
+
+.root {
+  display: flex;
+  justify-content: center;
+  background: #FFF8F3;
+
+  .container {
+    width: 1544px;
+    padding: 110px 95px;
+
+    @media screen and (max-width: $xl) {
+      width: 100%;
+      padding: 80px 130px;
+    }
+
+    @media screen and (max-width: $m) {
+      padding: 80px 16px;
+    }
+
+    .text {
+      padding-bottom: 32px;
+      font-family: $fontOpenSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      color: #181818;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

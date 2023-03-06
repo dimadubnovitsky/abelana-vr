@@ -1,0 +1,108 @@
+@import '../../../../../styles/variables';
+
+.root {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  overflow: hidden;
+
+  .container {
+    width: 1544px;
+    padding: 110px 80px 120px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    @media screen and (max-width: $xl) {
+      width: 100%;
+      padding: 80px 75px 64px;
+    }
+
+    @media screen and (max-width: $m) {
+      padding: 80px 0 64px;
+    }
+
+    .title {
+      max-width: 650px;
+      font-family: $fontOpenSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      @media screen and (max-width: $xl) {
+        max-width: 520px;
+        margin-left: 55px;
+        font-size: 56px;
+        line-height: 52px;
+      }
+
+      @media screen and (max-width: $m) {
+        max-width: 300px;
+        margin-left: 20px;
+        font-size: 32px;
+        line-height: 29px;
+      }
+    }
+
+    .companies {
+      padding-top: 65px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .logo {
+        width: 150px;
+        margin: 0 50px 32px;
+
+        @media screen and (max-width: $xl) {
+          width: 125px;
+          margin: 0 33px 32px;
+        }
+
+        @media screen and (max-width: $xl) {
+          margin: 0 25px 32px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .backgroundText {
+    width: 2800px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-family: $fontOpenSans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 300px;
+    line-height: 276px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
+    z-index: 1;
+
+    @media screen and (max-width: $xl) {
+      width: 1800px;
+      font-size: 191px;
+      line-height: 176px;
+      left: 25px;
+      top: 25px;
+    }
+
+    @media screen and (max-width: $m) {
+      width: 1300px;
+      font-size: 120px;
+      line-height: 110px;
+      left: 15px;
+      top: 15px;
+    }
+  }
+}
