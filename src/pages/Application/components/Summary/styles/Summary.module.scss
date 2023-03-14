@@ -1,0 +1,132 @@
+@import '../../../../../styles/variables';
+
+.root {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  overflow: hidden;
+
+  @media screen and (max-width: $xl) {
+    padding: 0 80px 104px;
+  }
+
+  @media screen and (max-width: $m) {
+    padding: 0 20px 80px;
+  }
+
+  .container {
+    width: 1544px;
+    padding: 0 0 0 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $xl) {
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+
+      @media screen and (max-width: $xl) {
+        padding: 0 50px;
+      }
+
+      @media screen and (max-width: $m) {
+        padding: 0;
+      }
+
+      .title {
+        padding-top: 168px;
+        font-family: $fontOpenSans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media screen and (max-width: $xl) {
+          padding-top: 104px;
+          font-size: 56px;
+          line-height: 52px;
+        }
+
+        @media screen and (max-width: $m) {
+          padding-top: 80px;
+          font-size: 32px;
+          line-height: 29px;
+        }
+      }
+
+      .text {
+        max-width: 680px;
+        padding: 48px 0 168px;
+        font-family: $fontOpenSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+
+        @media screen and (max-width: $xl) {
+          max-width: 100%;
+          padding: 32px 0 16px;
+          font-size: 20px;
+          line-height: 27px;
+        }
+
+        @media screen and (max-width: $m) {
+          padding: 32px 0;
+        }
+      }
+    }
+
+    .image {
+      width: 635px;
+      z-index: 2;
+
+      @media screen and (max-width: $xl) {
+        width: 100%;
+        max-width: 635px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .backgroundText {
+      position: absolute;
+      left: -25px;
+      top: 25px;
+      font-family: $fontOpenSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 300px;
+      line-height: 276px;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
+      z-index: 1;
+      pointer-events: none;
+
+      @media screen and (max-width: $xl) {
+        font-size: 191px;
+        line-height: 176px;
+      }
+
+      @media screen and (max-width: $m) {
+        left: 0;
+        font-size: 120px;
+        line-height: 110px;
+      }
+    }
+  }
+}

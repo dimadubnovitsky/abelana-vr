@@ -1,0 +1,12 @@
+.root {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+
+  .link {
+    margin-bottom: 32px;
+    width: max-content;
+    color: #FFFFFF;
+  }
+}

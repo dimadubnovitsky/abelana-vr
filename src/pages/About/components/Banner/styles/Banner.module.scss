@@ -6,11 +6,8 @@
   justify-content: center;
   background-image: url("../assets/images/background_stars.jpg");
   background-position: center;
+  background-size: cover;
   overflow: hidden;
-
-  @media screen and (max-width: $xl) {
-    background-size: cover;
-  }
 
   .filter {
     width: 100%;

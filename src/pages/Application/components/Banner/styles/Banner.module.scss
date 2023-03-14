@@ -1,0 +1,141 @@
+@import '../../../../../styles/variables';
+
+.root {
+  min-height: 864px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  @media screen and (max-width: $xl) {
+    min-height: 500px;
+    padding: 0 80px;
+  }
+
+  @media screen and (max-width: $m) {
+    min-height: 308px;
+    padding: 0 20px;
+  }
+
+  .filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .container {
+    width: 1544px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    @media screen and (max-width: $xl) {
+      width: 100%;
+      padding: 0 46px;
+    }
+
+    @media screen and (max-width: $m) {
+      width: 100%;
+      padding: 0;
+      align-items: center;
+    }
+
+    .title {
+      max-width: 700px;
+      padding-bottom: 32px;
+      font-family: $fontOpenSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 130px;
+      line-height: 120px;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      @media screen and (max-width: $xl) {
+        max-width: 400px;
+        padding-bottom: 32px;
+        font-size: 72px;
+        line-height: 66px;
+      }
+
+      @media screen and (max-width: $m) {
+        max-width: 100%;
+        padding-bottom: 24px;
+        font-size: 48px;
+        line-height: 44px;
+        text-align: center;
+      }
+    }
+
+    .buttonContainer {
+      position: relative;
+      width: max-content;
+      padding: 4.5px;
+      margin-bottom: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1px;
+      transition: .3s;
+
+      @media screen and (max-width: $xl) {
+        margin-bottom: 32px;
+      }
+
+      @media screen and (max-width: $m) {
+        margin-bottom: 24px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          border-color: transparent;
+
+          .button {
+            color: #333333;
+            background-color: #FFFFFF;
+          }
+
+          .buttonBorder {
+            opacity: 0;
+          }
+        }
+      }
+
+      &:active {
+        .button {
+          color: #FFF8F3;
+          background-color: #505050;
+        }
+
+        .buttonBorder {
+          opacity: 0;
+        }
+      }
+
+      .button {
+        padding: 13.5px 88.5px;
+        font-family: $fontOpenSans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #E68035;
+        border-radius: 1px;
+        transition: .3s;
+      }
+
+      .buttonBorder {
+        position: absolute;
+        transition: .3s;
+      }
+    }
+  }
+}

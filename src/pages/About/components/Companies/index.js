@@ -1,19 +1,19 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import styles from "./styles/Companies.module.scss";
-import verizon from "./assets/images/verizon.svg";
-import PRH from "./assets/images/PRH.svg";
-import CU from "./assets/images/CU.svg";
-import WSF from "./assets/images/WSF.svg";
-import HF from "./assets/images/HF.svg";
+import logo_verizon from "./assets/images/logo_verizon.png";
+import logo_RRH from "./assets/images/logo_RRH.png";
+import logo_columb_university from "./assets/images/logo_columb_university.png";
+import logo_WSF from "./assets/images/logo_WSF.png";
+import logo_high_fidelity from "./assets/images/logo_high_fidelity.png";
 
 const Companies = () => {
   const companies = [
-    { logo: verizon },
-    { logo: PRH },
-    { logo: CU },
-    { logo: WSF },
-    { logo: HF },
+    { logo: logo_verizon },
+    { logo: logo_RRH },
+    { logo: logo_columb_university },
+    { logo: logo_WSF },
+    { logo: logo_high_fidelity },
   ];
 
   return (
